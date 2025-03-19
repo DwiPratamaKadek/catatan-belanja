@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import "tailwindcss"; */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 100%;
+  max-height: 50px;
+}
+.navbar-logo {
+  max-width: 50px;
+  max-height: 20px;
+}
+.navbar-logo img {
+  height: auto;
+  width: 100%;
+}
+.navbar-start {
+  display: flex;
+  align-items: center;
+  margin-left: 5%;
+}
+.navbar-end {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+.navbar-end a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 50px 30px 10px 25px;
+  list-style: none; 
+}
+.navbar-menu a {
+  font-size: 25px;
+  padding-left: 50px;
+  text-decoration: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.image {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  transform: translateY(20%);
+  width: 926px;
+  height: 926px;
+  /* menggunakan transfrom dapat memudahkah mengatur posisi berdasarkan div saja*/
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+.welcome {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 200px;
+  width: 700px;
+  height: auto;
+}
+.welcome p{
+  font-family: "poppins", sans-serif;
+  font-size: 42px;
+}
+p.helo{
+  font-family: "KoHo", sans-serif;
+  font-weight: 100 ;
+  font-size: 25px;  
+}
+.button-mulai{
+  background-color: #C4D7B2;
+  border: none;
+  border-radius: 10px;
+  padding: 13px 25px 13px 25px;
+  font-family: "poppins", sans-serif;
+  font-size: 20px;
+  transform: translateY(200%);
+  text-decoration: none;
+  color: black;
+}
+.about-us{
+  display: block;
+  margin-left: 12%;
+
+}
+.about {
+  font-family: 'poppins',sans-serif;
+  font-size: 20px;
+}
+.isi-about {
+  width: 40%;
+  height: auto;
+  font-family: 'KoHo',sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.our-fiture {
+  position: relative;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+  /* Tambahkan unit (px) */
+  padding: 10px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.grid-container::-webkit-scrollbar{
+  display: none;
+}
+
+.grid-item {
+  flex: 0 0 auto;
+  width: 460px;
+  height: 402px;
+  background-color: white;
+  box-shadow: 1px 4px 23.2px rgba(0, 0, 0, 0.3);
+  margin-right: 80px;
+  /* Ganti persen dengan px untuk konsistensi */
+  border-radius: 15px;
+}
+
+.scroll {
+  position: absolute;
+  background-color:transparent;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 40px;
+  /* Atur lebar tombol */
+  height: 40px;
+  /* Atur tinggi tombol */
+  top: 60%;
+  /* Posisikan tombol di tengah vertikal */
+  transform: translateY(-60%);
+  /* Geser ke atas sebesar 50% dari tinggi tombol */
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll img {
+  width: 40px;
+  height: 40px;
+}
+
+.scroll.left {
+  left: 10px;
+  /* Posisikan tombol kiri */
+}
+
+.scroll.right {
+  right: 10px;
+  /* Posisikan tombol kanan */
+}
+.fiture{
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+}
+.fiture h1{
+  margin-top: 10%;
+  margin-left: 2%;
+  margin-bottom: 5%;
+}
+.grid-item img {
+  width: 13%;
+  height: auto;
+  margin: 50px 50px ;
+}
+.grid-item h2 {
+  font-family: 'poppins',sans-serif;
+  font-weight: 500;
+  margin-left: 50px;
+}
+.grid-item p{
+
+  font-family: 'KoHo',sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  width: 430;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 5%; 
+}
+.footer{
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+.footer-item{
+  text-align: center;
+  margin-top: 15%;
+  margin-bottom: 3%;
+  width: 40%;
+}
+.footer-item h1{
+  font-family: 'poppins', sans-serif;
+  font-weight: 500;
+  margin-bottom: 6%;
+}
+.footer p{
+  font-family: 'KoHo',sans-serif;
+  font-size: 18px;
+}
+.footer-email{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-email img{
+  width: 30px;
+  height: auto;
+  margin-right: 5%;
+}
+.footer-email a{
+  color: black;
+  text-decoration: none;
+  font-family: 'poppins',sans-serif;
+}
