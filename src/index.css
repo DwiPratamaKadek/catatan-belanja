@@ -2,13 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&family=KoHo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* @import "tailwindcss"; */
 
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   max-width: 100%;
-  max-height: 50px;
+  max-height: none;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
 }
 .navbar-logo {
   max-width: 50px;
@@ -74,7 +78,7 @@
 .welcome {
   flex: 1;
   margin-right: 20px;
-  margin-left: 200px;
+  margin-left: 5%;
   width: 700px;
   height: auto;
 }
@@ -97,11 +101,21 @@ p.helo{
   transform: translateY(200%);
   text-decoration: none;
   color: black;
+  transition: all 0.3s ease-in-out;
+    /* Animasi semua properti selama 0.5 detik */
+}
+.button-mulai:hover{
+  padding: 15px 28px 15px 28px;
+  font-size: 22px;
+
 }
 .about-us{
+  position: relative;
   display: block;
   margin-left: 12%;
-
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 200px;
 }
 .about {
   font-family: 'poppins',sans-serif;
@@ -246,3 +260,4 @@ p.helo{
   text-decoration: none;
   font-family: 'poppins',sans-serif;
 }
+
