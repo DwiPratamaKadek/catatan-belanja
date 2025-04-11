@@ -10,7 +10,7 @@ import ErrorBoundary from "./components/erorBoundry";
 export default function App() { 
   return (
     <Router>
-      <Nabar/>
+      <Navbar/>
       <Routes>
         
           <Route path="/" element={<Home/>} />
@@ -20,3 +20,5 @@ export default function App() {
       </Routes>
       <Footer/>
     </Router>
+  )
+}
